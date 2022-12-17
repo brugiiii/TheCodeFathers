@@ -6,7 +6,7 @@
   background-image: url(../images/hero/icecream_mob@1x.png),
     url(../images/hero/dots_mob@1x.png);
   background-repeat: no-repeat;
-  background-size: 177px 217px, contain;
+  background-size: 177px, 320px;
   background-position: 58% bottom, bottom;
 
   @media screen and(min-device-pixel-ratio: 2),
@@ -24,8 +24,8 @@
 
     background-image: url(../images/hero/icecream_tab@1x.png),
       url(../images/hero/dots_tab@1x.png);
-    background-size: 268px 329px, contain;
-    background-position: 82% bottom, bottom;
+    background-size: 268px, 768px;
+    background-position: 70% bottom, bottom;
 
     @media screen and(min-device-pixel-ratio: 2),
       screen and(min-resolution: 192dpi),
@@ -43,8 +43,8 @@
 
     background-image: url(../images/hero/icecream_ds@1x.png),
       url(../images/hero/dots_ds@1x.png);
-    background-size: 456px 560px, contain;
-    background-position: 89% bottom, bottom;
+    background-size: 456px, 1200px;
+    background-position: 72% bottom, bottom;
 
     @media screen and(min-device-pixel-ratio: 2),
       screen and(min-resolution: 192dpi),
