@@ -268,8 +268,3 @@
     }
   }
 }
-
-.button {
-  transition: background-color $duration $cubic-bezier,
-    border-color $duration $cubic-bezier, color $duration $cubic-bezier;
-}
