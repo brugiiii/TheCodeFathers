@@ -1,0 +1,48 @@
+.button {
+  height: 42px;
+  min-width: 114px;
+  padding: 0 33px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
+  color: $secondary-text-color;
+  background-color: $accent-color;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  &:focus {
+    color: $white-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $hover-focus-color;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $disable-color;
+  }
+}
+
+.button--transparent {
+  border-color: $accent-color;
+  background-color: transparent;
+
+  &:focus {
+    color: $white-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: inherit;
+    border-color: $hover-focus-color;
+  }
+
+  &:disabled {
+    border-color: $disable-color;
+  }
+}

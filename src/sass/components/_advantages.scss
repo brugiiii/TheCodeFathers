@@ -1,0 +1,89 @@
+.advantages {
+  padding-bottom: 32px;
+
+  font-weight: 700;
+  text-align: center;
+  background-color: $bg-color;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 80px;
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 80px;
+      flex-basis: calc((100% - 76px) / 3);
+      margin: 0 44px;
+    }
+  }
+
+  &__item::before {
+    content: ' ';
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 16px;
+
+    background-image: url(../images/advantages/cow.svg);
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__item:nth-child(2)::before {
+    background-image: url(../images/advantages/weight.svg);
+  }
+
+  &__item:nth-child(3)::before {
+    background-image: url(../images/advantages/ice-crema.svg);
+  }
+
+  &__value {
+    margin-bottom: 16px;
+
+    font-size: 36px;
+    line-height: 1.22;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+      font-size: 48px;
+      line-height: 1.23;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      line-height: 1.22;
+    }
+  }
+
+  &__text {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 28px;
+    }
+
+    line-height: 1.7;
+    letter-spacing: 0;
+
+    @media screen and (min-width: 768px) {
+      font-weight: 400;
+      line-height: 1.74;
+    }
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.76;
+      letter-spacing: 0.02;
+    }
+  }
+}

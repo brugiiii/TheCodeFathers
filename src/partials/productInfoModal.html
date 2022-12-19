@@ -1,0 +1,108 @@
+<div class="backdrop is-hidden" prod-modal>
+  <div class="modal-product">
+    <button class="modal-product__button" type="button" prod-modal-close>
+      <svg class="modal-product__icon" width="20" height="20">
+        <use href="./images/sprite.svg#clarity_close-line"></use>
+      </svg>
+    </button>
+
+    <p class="modal-product__title">Chololate icecream</p>
+    <div class="modal-product__thumb">
+      <picture>
+        <source
+          media="(min-width: 480px)"
+          srcset="
+            ./images/productInfoModal/chololate@1x.png 1x,
+            ./images/productInfoModal/chololate@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/productInfoModal/chololate@1x.png"
+          alt="Chololate icecream"
+          width="132"
+          height="132"
+        />
+      </picture>
+    </div>
+    <ul class="modal-product__parameter list">
+      <li class="modal-product__border">
+        <p class="modal-product__circle">320</p>
+        <p class="modal-product__parameter-text">kcal</p>
+      </li>
+      <li class="modal-product__border">
+        <p class="modal-product__circle">4g</p>
+        <p class="modal-product__parameter-text">Prote...</p>
+      </li>
+      <li class="modal-product__border">
+        <p class="modal-product__circle">8,2g</p>
+        <p class="modal-product__parameter-text">Fats</p>
+      </li>
+      <li class="modal-product__border">
+        <p class="modal-product__circle">40,4g</p>
+        <p class="modal-product__parameter-text">Carbs</p>
+      </li>
+    </ul>
+    <p class="modal-product__ingredient-title">Ingredients</p>
+    <ul class="ingridients-list list">
+      <li class="ingridients-list__item">
+        <p class="ingridients-list__text">Milk</p>
+        <p class="ingridients-list__text">100ml</p>
+      </li>
+      <li class="ingridients-list__item">
+        <p class="ingridients-list__text">Belgian chocolate</p>
+        <p class="ingridients-list__text">20g</p>
+      </li>
+      <li class="ingridients-list__item">
+        <p class="ingridients-list__text">Cream</p>
+        <p class="ingridients-list__text">150ml</p>
+      </li>
+      <li class="ingridients-list__item">
+        <p class="ingridients-list__text">Cocoa powder</p>
+        <p class="ingridients-list__text">30g</p>
+      </li>
+      <li class="ingridients-list__item">
+        <p class="ingridients-list__text">Sugar</p>
+        <p class="ingridients-list__text">40g</p>
+      </li>
+      <li class="ingridients-list__item">
+        <p class="ingridients-list__text">Vanilla sugar</p>
+        <p class="ingridients-list__text">10g</p>
+      </li>
+    </ul>
+    <form class="modal-product__form" autocomplete="on" novalidate>
+      <div class="modal-product__form-group">
+        <label class="modal-product__form-field">
+          <input
+            class="modal-product__form-input"
+            type="text"
+            name="name"
+            placeholder="Name"
+            maxlength="32"
+            pattern="[A-Za-z]{1,32}"
+            required
+          />
+        </label>
+        <label class="modal-product__form-field">
+          <input
+            class="modal-product__form-input"
+            type="text"
+            name="phone"
+            placeholder="Phone"
+            pattern="[7-9]{1}[0-9]{9}"
+            required
+          />
+        </label>
+        <label class="modal-product__form-field">
+          <textarea
+            class="modal-product__form-comment"
+            name="comment"
+            rows="5"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div>
+      <button class="button prod-modal__button" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

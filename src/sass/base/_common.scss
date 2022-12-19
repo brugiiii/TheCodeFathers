@@ -1,0 +1,132 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+
+  color: $primary-text-color;
+  background-image: url(../images/body/sm1x.png);
+
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+  }
+
+  @media screen and(min-device-pixel-ratio: 2),
+    screen and(min-resolution: 192dpi),
+    screen and(min-resolution: 2dppx) {
+    background-image: url(../images/body/sm2x.png);
+  }
+}
+
+@media screen and(min-width:768px) {
+  body {
+    background-image: url(../images/body/md1x.png);
+
+    @media screen and(min-device-pixel-ratio: 2),
+      screen and(min-resolution: 192dpi),
+      screen and(min-resolution: 2dppx) {
+      background-image: url(../images/body/md2x.png);
+    }
+  }
+}
+
+@media screen and(min-width:1200px) {
+  body {
+    background-image: url(../images/body/lg1x.png);
+
+    @media screen and(min-device-pixel-ratio: 2),
+      screen and(min-resolution: 192dpi),
+      screen and(min-resolution: 2dppx) {
+      background-image: url(../images/body/lg2x.png);
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0px 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and(min-width:480px) {
+    width: 480px;
+  }
+
+  @media screen and(min-width:768px) {
+    width: 768px;
+    padding: 0 32px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 1200px;
+    padding: 0 16px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  transition: opacity 250ms linear, visibility 250ms linear;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

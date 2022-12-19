@@ -1,0 +1,292 @@
+//font-family: 'Seymour One', sans-serif; Шрифт заголовка!
+.hero {
+  position: relative;
+  min-width: 320px;
+  height: 502px;
+  padding-top: 99px;
+  background-color: $bg-color;
+  background-image: url(../images/hero/points-sm1x.png);
+  background-repeat: no-repeat;
+
+  background-position: 0% 100%;
+
+  //mobile
+  // @media screen and (min-width:480px) {
+
+  // }
+  //table
+  @media screen and (min-width: 768px) {
+    height: 415px;
+    padding-top: 80px;
+    background-image: url(../images/hero/points_table.png);
+  }
+  //desctop
+  @media screen and (min-width: 1200px) {
+    height: 664px;
+    padding-top: 118px;
+    background-image: url(../images/hero/points_desctop.png);
+  }
+
+  &__title {
+    // padding-top: 99px;
+    min-width: 247px;
+    margin-bottom: 32px;
+
+    font-family: Seymour One;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: calc(33 / 26);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    //mobile
+    @media screen and (min-width: 480px) {
+      width: 247px;
+    }
+
+    //table
+    @media screen and (min-width: 768px) {
+      //  padding-top: 80px;
+      margin-bottom: 24px;
+    }
+    //desctop
+    @media screen and (min-width: 1200px) {
+      // padding-top: 118px;
+      margin-bottom: 28px;
+      width: 367px;
+      font-size: 38px;
+      line-height: calc(48 / 38);
+    }
+  }
+  &__interactive-element {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 236px;
+
+    //table
+    @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__button--mobile {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin-right: 12px;
+
+    border-radius: 8px;
+    min-width: 108px;
+    height: 38px;
+    padding: 11px 23px;
+    line-height: calc(15 / 12);
+
+    //table
+    @media screen and (min-width: 768px) {
+      // margin-bottom: 12px;
+    }
+
+    //desctop
+    @media screen and (min-width: 1200px) {
+      min-width: 134px;
+      height: 42px;
+      padding: 12px 32px;
+
+      font-size: 14px;
+      line-height: calc(18 / 14);
+    }
+  }
+
+  &:focus {
+    color: $black-color;
+  }
+
+  // //table
+  // @media screen and (min-width:768px) {
+  // margin-bottom:12px;
+  // }
+
+  &__link {
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: $accent-color;
+
+    &:hover {
+      color: $hover-focus-color;
+    }
+
+    &:focus {
+      color: $primary-text-color;
+    }
+    &:disabled {
+      color: $disable-color;
+    }
+  }
+
+  &__description-items {
+    display: none;
+    gap: 32px;
+    padding-bottom: 10px;
+
+    //table
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+    //desctop
+    @media screen and (min-width: 1200px) {
+      align-items: flex-end;
+    }
+  }
+
+  &__img-cakes {
+    display: none;
+
+    //table
+    @media screen and (min-width: 768px) {
+      // position:absolute;
+      display: block;
+
+      margin-right: 32px;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+
+    display: none;
+
+    //table
+    @media screen and (min-width: 768px) {
+      display: flex;
+      width: 139px;
+      align-items: center;
+      margin-bottom: 0px;
+    }
+  }
+  &__description-marker::marker {
+    display: none;
+  }
+  &__description-marker {
+    content: '';
+    list-style: url(../images/hero/Arrow.svg);
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0px;
+    left: 83px;
+    bottom: 0px;
+    // width:auto;
+    // height: auto;
+
+    //mobile
+    @media screen and (min-width: 480px) {
+      // width:177px;
+      // height:217px;
+    }
+    //table
+    @media screen and (min-width: 768px) {
+      width: auto;
+      height: auto;
+
+      left: 408px;
+      top: 86px;
+    }
+    //desctop
+    @media screen and (min-width: 1200px) {
+      left: 652px;
+      top: 104px;
+    }
+  }
+  &__caffee-list {
+    display: none;
+    //table
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      // margin-bottom: 20px;
+      margin-top: 0px;
+      padding-left: 0px;
+
+      position: absolute;
+      top: 94px;
+      right: 32px;
+
+      list-style-type: none;
+    }
+    //desctop
+    @media screen and (min-width: 1200px) {
+      top: 126px;
+      right: 16px;
+    }
+  }
+
+  &__counters-list {
+    //table
+    @media screen and (min-width: 768px) {
+      gap: 4px;
+    }
+  }
+  &__count {
+    // display: block;
+    margin-bottom: 4px;
+    inline-size: auto;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: calc(34 / 28);
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+
+    //desctop
+    @media screen and (min-width: 1200px) {
+      font-size: 46px;
+      line-height: 56px;
+    }
+  }
+  &__shops {
+    margin-bottom: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: calc(10 / 8);
+    text-align: right;
+    color: $primary-text-color;
+
+    //desctop
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(17 / 14);
+    }
+  }
+  &__trucks-list {
+    display: none;
+    //table
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-end;
+
+      margin-top: 0px;
+      padding-left: 0px;
+
+      position: absolute;
+      top: 162px;
+      right: 32px;
+
+      list-style-type: none;
+    }
+    @media screen and (min-width: 1200px) {
+      top: 219px;
+      right: 16px;
+    }
+  }
+}

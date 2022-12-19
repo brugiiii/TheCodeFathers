@@ -1,0 +1,160 @@
+.franchise-modal {
+  margin-top: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden auto;
+
+  width: 280px;
+  padding: 28px;
+  background-color: $primary-text-color;
+
+  border-radius: 10px;
+  border: 2px solid $accent-color;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 32px 60px;
+  }
+}
+
+.franchise-modal__button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  display: flex;
+  padding: 0;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.franchise-modal__icon {
+  @media screen and(min-width:768px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.franchise-modal__title {
+  margin: 0 auto 20px;
+
+  font-family: 'Seymour One', sans-serif;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-align: center;
+
+  color: $secondary-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    width: 322px;
+    margin-bottom: 24px;
+  }
+}
+
+.franchise-modal__text {
+  margin-bottom: 24px;
+
+  font-size: 14px;
+  line-height: calc(20 / 14);
+
+  color: $secondary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+    margin: 0 auto 32px;
+
+    font-size: 16px;
+    line-height: calc(22 / 16);
+  }
+}
+
+.modal_form {
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    margin: 0 auto;
+  }
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.form-input,
+.form-message {
+  width: 100%;
+  height: 32px;
+  padding: 8px 12px;
+  background-color: $input-bg-color;
+  border: 1px solid $bg-color;
+  border-radius: 10px;
+  outline: transparent;
+  color: $secondary-text-color;
+  transition: border 250ms linear;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
+}
+
+.form-input:focus,
+.form-message:focus {
+  border: 1px solid $accent-color;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label,
+.form-message:focus + .form-label,
+.form-message:not(:placeholder-shown) + .form-label--message {
+  opacity: 0;
+}
+
+.form-input::placeholder,
+.form-message::placeholder {
+  opacity: 0;
+  color: $copyright-color;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: rgb(223, 117, 117);
+}
+input:valid:not(:placeholder-shown) {
+  border-color: $bg-color;
+}
+
+.form-message {
+  height: 64px;
+  margin-bottom: 24px;
+  resize: none;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
+}
+
+.form-label {
+  color: $secondary-text-color;
+  position: absolute;
+  top: 1px;
+  left: 12px;
+}
+
+.form-label--message {
+  top: -67px;
+
+  @media screen and (min-width: 1200px) {
+    top: -71px;
+  }
+}
+
+.form-btn {
+  display: block;
+  margin: 0 auto;
+}
