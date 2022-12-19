@@ -142,6 +142,8 @@
 .soc__link {
   color: $bg-color;
 
+  transition: color $duration $cubic-bezier;
+
   &:hover,
   &:focus {
     color: $primary-text-color;

@@ -129,6 +129,12 @@
         background-image: url(../images/about/cow_ds@2x.png);
       }
     }
+
+    transition: transform 600ms ease;
+
+    &:hover {
+      transform: scale(1.08);
+    }
   }
 
   &__thumb-text {

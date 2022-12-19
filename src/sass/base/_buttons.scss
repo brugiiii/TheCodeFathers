@@ -12,9 +12,9 @@
   border-radius: 10px;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: color $duration $cubic-bezier,
-    background-color $duration $cubic-bezier,
-    border-color $duration $cubic-bezier;
+
+  transition: border-color $duration $cubic-bezier, box-shadow 450ms ease-in-out,
+    color 450ms ease-in-out;
 
   &:focus {
     color: $white-color;
@@ -22,8 +22,8 @@
 
   &:hover,
   &:focus {
-    background-color: $hover-focus-color;
     outline: none;
+    box-shadow: 0 0 40px 40px $hover-focus-color inset;
   }
 
   &:disabled {
@@ -43,6 +43,7 @@
   &:focus {
     background-color: inherit;
     border-color: $hover-focus-color;
+    box-shadow: none;
   }
 
   &:disabled {

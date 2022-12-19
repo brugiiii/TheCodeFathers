@@ -169,3 +169,11 @@
   border: none;
   cursor: pointer;
 }
+
+.prod-img {
+  transition: transform 600ms ease;
+
+  .products-list__item:hover & {
+    transform: scale(1.08);
+  }
+}
