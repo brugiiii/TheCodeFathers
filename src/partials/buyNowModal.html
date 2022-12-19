@@ -1,0 +1,74 @@
+<div class="backdrop">
+  <div class="modal_buy-now">
+    <button class="modal_buy-now-close" type="button">
+      <svg class="icon">
+        <use href="./images/sprite.svg#ep_close"></use>
+      </svg>
+    </button>
+    <p class="modal_buy-now__title">Buy now</p>
+    <form class="modal_buy-now__form">
+      <ul class="modal_buy-now__list list">
+        <li class="modal_buy-now__item">
+          <label class="modal_buy-now-checkbox">
+            <input type="checkbox" class="checkbox visually-hidden">
+            <div class="modal_buy-now-product product-ice-cream">
+              <div class="modal_buy-now-product__frame">
+                <div class="modal_buy-now-product__image">
+                  <img
+                    srcset="./images/modal/icecream@1x.png 1x, ./images/modal/icecream@2x.png 2x"       
+                    src="./images/modal/icecream@1x.png" 
+                    alt="Ice Cream"
+                  />
+                </div>
+              </div>
+              <p class="modal_buy-now-product__name">Ice Cream</p>
+          </label>
+        </li>
+        <li class="modal_buy-now__item">
+          <label class="modal_buy-now-checkbox">
+            <input type="checkbox" class="checkbox visually-hidden">
+            <div class="modal_buy-now-product product-ice-coffe">
+              <div class="modal_buy-now-product__frame">
+                <div class="modal_buy-now-product__image">
+                  <img
+                    srcset="./images/modal/icecoffee@1x.png 1x, ./images/modal/icecoffee@2x.png 2x"       
+                    src="./images/modal/icecoffee@1x.png" 
+                    alt="Ice Coffe"
+                  />
+                </div>
+              </div>
+              <p class="modal_buy-now-product__name">Ice Coffe</p>
+          </label>
+        </li>
+        <li class="modal_buy-now__item">
+          <label class="modal_buy-now-checkbox">
+            <input type="checkbox" class="checkbox visually-hidden">
+            <div class="modal_buy-now-product product-milkshake">
+              <div class="modal_buy-now-product__frame">
+                <div class="modal_buy-now-product__image">
+                  <img
+                    srcset="./images/modal/milkshake@1x.png 1x, ./images/modal/milkshake@2x.png 2x"       
+                    src="./images/modal/milkshake@1x.png" 
+                    alt="Milkshake"
+                  />
+                </div>
+              </div>
+              <p class="modal_buy-now-product__name">Milkshake</p>
+          </label>
+        </li>
+      </ul>
+      <ul class="modal_buy-now-list list">
+        <li class="modal_buy-now-list__item">
+          <input type="text" placeholder="Name" name="name" class="modal_buy-now-form__input" pattern="\w{3,16}" required>
+        </li>
+        <li class="modal_buy-now-list__item">
+          <input type=tel" placeholder="Phone" name="phone" class="modal_buy-now-form__input" pattern="[0-9]{10}" required>
+        </li>
+        <li class="modal_buy-now-list__item">
+          <textarea placeholder="Comment" name="comment" class="modal_buy-now-form__input" pattern="\w{228}" required></textarea>
+        </li>
+      </ul>
+      <button type="submit" class="modal_buy-now__button button">Submit</button>
+    </form>
+  </div>
+</div>
