@@ -11,6 +11,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('body-fixed')
   }
 })();
 
@@ -27,6 +28,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('body-fixed')
   }
 })();
 
@@ -43,6 +45,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('body-fixed')
   }
 })();
 
@@ -59,6 +62,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('body-fixed')
   }
 })();
 
@@ -74,6 +78,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('body-fixed')
   }
 })();
 
@@ -89,6 +94,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('body-fixed')
   }
 })();
 
@@ -150,6 +156,7 @@ function changeHeaderBackground() {
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('body-fixed')
   }
 })();
 
@@ -165,5 +172,7 @@ function changeHeaderBackground() {
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('body-fixed')
   }
 })();
+
