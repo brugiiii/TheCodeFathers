@@ -5,9 +5,9 @@
   background-color: $bg-color;
   background-image: url(../images/hero/icecream_mob@1x.png),
     url(../images/hero/dots_mob@1x.png);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, repeat-x;
   background-size: 177px, 320px;
-  background-position: 58% bottom, bottom;
+  background-position: center bottom, bottom;
 
   @media screen and(min-device-pixel-ratio: 2),
     screen and(min-resolution: 192dpi),
@@ -157,6 +157,10 @@
 
 .hero-list {
   margin-left: auto;
+
+  @media screen and(max-width:767.98px) {
+    display: none;
+  }
 }
 
 .hero-list__item {
