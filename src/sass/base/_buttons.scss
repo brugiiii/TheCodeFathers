@@ -12,6 +12,9 @@
   border-radius: 10px;
   border: 2px solid transparent;
   cursor: pointer;
+  transition: color $duration $cubic-bezier,
+    background-color $duration $cubic-bezier,
+    border-color $duration $cubic-bezier;
 
   &:focus {
     color: $white-color;

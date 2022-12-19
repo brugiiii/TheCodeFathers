@@ -1,71 +1,44 @@
 <section class="hero">
-  <div class="container">
-    <h1 class="hero__title">ice cream made with passion</h1>
-
-    <div class="hero__interactive-element">
-      <button
-        class="button button--transparent hero__button--mobile"
-        type="button"
-      >
+  <div class="container hero__container">
+    <div class="hero-left-side">
+      <h1 class="hero__title">ice cream made with passion</h1>
+      <button class="hero__button button button--transparent" type="button">
         Products
       </button>
-      <a href="" class="hero__link">How it&#8242;s made?</a>
-    </div>
+      <a href="#how-its-made" class="link hero__link">How it’s made?</a>
 
-    <div class="hero__description-items">
-      <!-- plate of cakes -->
-      <picture class="hero__img-cakes">
-        <source
-          media="(min-width:1200px)"
-          srcset="./images/hero/img-1_225.png"
+      <div class="hero-thumb">
+        <img
+          srcset="
+            ./images/hero/plate_tab@1x.png 152w,
+            ./images/hero/plate_tab@2x.png 304w,
+            ./images/hero/plate_ds@1.png   225w,
+            ./images/hero/plate_ds@2x.png  450w
+          "
+          sizes="(min-width:1200px) 225px, 152px"
+          src="./images/hero/plate_tab@1x.png"
+          alt="plate with icecream"
+          class="hero-thumb__image"
         />
-        <source
-          media="(min-width:768px)"
-          srcset="./images/hero/img-1_152.png"
-        />
-        <img src=./images/hero/img-1_152.png alt="plate of Cakes"
-        style="width:auto;">
-      </picture>
-
-      <details>
-        <summary class="hero__description-marker"></summary>
-        <p class="hero__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-      </details>
+        <div>
+          <p class="hero-thumb__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <svg class="hero-thumb__icon" width="40" height="16">
+            <use href="./images/sprite.svg#icon-Arrow"></use>
+          </svg>
+        </div>
+      </div>
     </div>
-    <!-- iceCream -->
-    <picture class="hero__img">
-      <source
-        media="(min-width:1200px )"
-        srcset="./images/hero/img-2_456.png"
-      />
-      <source media="(min-width:768px )" srcset="./images/hero/img-2_268.png" />
-      <source media="(min-width:320px)" srcset="./images/hero/img-2_177.png" />
-      <img
-        src="./images/hero/img-2_177.png"
-        alt="iceCream"
-        srcset="width:auto;"
-      />
-    </picture>
-
-    <!-- counters -->
-    <ul class="hero__caffee-list">
-      <li class="hero__counters-list">
-        <span class="hero__count">16</span>
+    <ul class="list hero-list">
+      <li class="hero-list__item">
+        <p class="hero-list__number">16</p>
+        <p class="hero-list__text">cafes</p>
       </li>
-      <li class="hero__counters-list">
-        <p class="hero__shops">cafes</p>
-      </li>
-    </ul>
-
-    <ul class="hero__trucks-list">
-      <li class="hero__counters-list">
-        <span class="hero__count">23</span>
-      </li>
-      <li class="hero__counters-list">
-        <p class="hero__shops">food trucks</p>
+      <li class="hero-list__item">
+        <p class="hero-list__number">23</p>
+        <p class="hero-list__text">food trucks</p>
       </li>
     </ul>
   </div>
