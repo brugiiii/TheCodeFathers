@@ -1,4 +1,14 @@
 .contacts {
+  padding-bottom: 60px;
+
+  @media screen and(min-width:768px) {
+    padding-bottom: 40px;
+  }
+
+  @media screen and(min-width:1200px) {
+    padding-bottom: 120px;
+  }
+
   & .container {
     @media screen and (max-width: 767px) {
       display: flex;
@@ -225,20 +235,11 @@
 
 .contacts-buttons__item {
   width: 196px;
-  margin-bottom: 60px;
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 16px;
     }
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 120px;
   }
 }
 
