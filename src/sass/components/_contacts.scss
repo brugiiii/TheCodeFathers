@@ -97,6 +97,19 @@
       width: 368px;
       padding: 40px;
     }
+
+    // animation
+    transition: transform $duration $cubic-bezier,
+      box-shadow $duration $cubic-bezier;
+    overflow: hidden;
+    transform-origin: 50% 0;
+    transform: perspective(800px) rotateX(0deg) translateZ(0);
+
+    &:hover {
+      transform: perspective(800px) rotateX(2deg) translate3d(0, -25px, 10px);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
   }
 
   &__category {

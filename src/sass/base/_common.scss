@@ -69,6 +69,9 @@ img {
 
 .link {
   text-decoration: none;
+
+  transition: color $duration $cubic-bezier,
+    border-color $duration $cubic-bezier;
 }
 
 .list {
