@@ -75,13 +75,22 @@
 }
 
 .hero__button {
-  height: 38px;
-  min-width: 108px;
-  padding: 0 24px;
-
+  display: inline-flex;
+  min-width: 134px;
+  height: 42px;
   margin-right: 12px;
+  padding: 0 14px;
 
-  color: $black-color;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+
+  color: $secondary-text-color;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
 
   @media screen and(min-width:768px) {
     margin-bottom: 12px;
@@ -89,6 +98,20 @@
 
   @media screen and(min-width:1200px) {
     margin-bottom: 42px;
+    margin-right: 34px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $hover-focus-color;
+  }
+
+  &:focus {
+    color: $primary-text-color;
+  }
+
+  &:disabled {
+    border-color: $slider-button-disable;
   }
 }
 
