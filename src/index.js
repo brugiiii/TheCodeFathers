@@ -8,10 +8,18 @@
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.modal.addEventListener('click', toggleBackdropModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
     document.body.classList.toggle('body-fixed')
+  }
+  function toggleBackdropModal(e) {
+    
+    if(e.target.classList[0] === "backdrop"){
+     document.body.classList.toggle('body-fixed')
+    refs.modal.classList.toggle('is-hidden');
+   }
   }
 })();
 
@@ -25,10 +33,18 @@
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.modal.addEventListener('click', toggleBackdropModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
     document.body.classList.toggle('body-fixed')
+  }
+  function toggleBackdropModal(e) {
+    
+    if(e.target.classList[0] === "backdrop"){
+     document.body.classList.toggle('body-fixed')
+    refs.modal.classList.toggle('is-hidden');
+   }
   }
 })();
 
@@ -42,12 +58,21 @@
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.modal.addEventListener('click', toggleBackdropModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
     document.body.classList.toggle('body-fixed')
   }
+  function toggleBackdropModal(e) {
+    
+    if(e.target.classList[0] === "backdrop"){
+     document.body.classList.toggle('body-fixed')
+    refs.modal.classList.toggle('is-hidden');
+   }
+  }
 })();
+
 
 // product info madal
 (() => {
@@ -59,10 +84,18 @@
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.modal.addEventListener('click', toggleBackdropModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
     document.body.classList.toggle('body-fixed')
+  }
+  function toggleBackdropModal(e) {
+    
+    if(e.target.classList[0] === "backdrop"){
+     document.body.classList.toggle('body-fixed')
+    refs.modal.classList.toggle('is-hidden');
+   }
   }
 })();
 
@@ -75,10 +108,18 @@
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.modal.addEventListener('click', toggleBackdropModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
     document.body.classList.toggle('body-fixed')
+  }
+  function toggleBackdropModal(e) {
+    
+    if(e.target.classList[0] === "backdrop"){
+     document.body.classList.toggle('body-fixed')
+    refs.modal.classList.toggle('is-hidden');
+   }
   }
 })();
 
@@ -91,10 +132,18 @@
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.modal.addEventListener('click', toggleBackdropModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
     document.body.classList.toggle('body-fixed')
+  }
+  function toggleBackdropModal(e) {
+    
+    if(e.target.classList[0] === "backdrop"){
+     document.body.classList.toggle('body-fixed')
+    refs.modal.classList.toggle('is-hidden');
+   }
   }
 })();
 
@@ -153,10 +202,18 @@ function changeHeaderBackground() {
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.modal.addEventListener('click', toggleBackdropModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
     document.body.classList.toggle('body-fixed')
+  }
+  function toggleBackdropModal(e) {
+    
+    if(e.target.classList[0] === "backdrop"){
+     document.body.classList.toggle('body-fixed')
+    refs.modal.classList.toggle('is-hidden');
+   }
   }
 })();
 
@@ -169,10 +226,18 @@ function changeHeaderBackground() {
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.modal.addEventListener('click', toggleBackdropModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
     document.body.classList.toggle('body-fixed')
+  }
+  function toggleBackdropModal(e) {
+    
+    if(e.target.classList[0] === "backdrop"){
+     document.body.classList.toggle('body-fixed')
+    refs.modal.classList.toggle('is-hidden');
+   }
   }
 })();
 
