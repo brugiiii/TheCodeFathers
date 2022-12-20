@@ -40,11 +40,30 @@
     <include src="./partials/franchiseModal.html"></include>
     <include src="./partials/ourLocationModal.html"></include>
 
+   
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+
+    
+    <script>
+
+      function scroll(val,el,timeout,step){
+      var i=0;
+      (function(){
+      if(i<=val){
+      setTimeout(arguments.callee,timeout);
+      document.getElementById(el).innerHTML=i;
+      i=i+step;
+      }else{
+      document.getElementById(el).innerHTML=val;
+      }
+      })();
+      }
+      scroll(16,'hero-list__number',400,1);
+      </script>
   </body>
 </html>

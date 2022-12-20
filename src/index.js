@@ -175,4 +175,17 @@ function changeHeaderBackground() {
     document.body.classList.toggle('body-fixed')
   }
 })();
-
+//counter
+function scroll(val,el,timeout,step){
+  var i=0;
+  (function(){
+  if(i<=val){
+  setTimeout(arguments.callee,timeout);
+  document.getElementById(el).innerHTML=i;
+  i=i+step;
+  }else{
+  document.getElementById(el).innerHTML=val;
+  }
+  })();
+  }
+  scroll(16,'hero-list__number',150,1);
