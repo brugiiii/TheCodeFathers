@@ -141,3 +141,11 @@ img {
 .body-fixed {
   overflow: hidden;
 }
+
+input:invalid:not(:placeholder-shown) {
+  border-color: rgb(223, 117, 117);
+}
+
+input:valid:not(:placeholder-shown) {
+  border-color: $bg-color;
+}

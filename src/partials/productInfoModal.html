@@ -70,7 +70,7 @@
         <p class="ingridients-list__text">10g</p>
       </li>
     </ul>
-    <form class="modal-product__form" autocomplete="on" novalidate>
+    <form class="modal-product__form" autocomplete="on">
       <div class="modal-product__form-group">
         <label class="modal-product__form-field">
           <input
@@ -79,7 +79,8 @@
             name="name"
             placeholder="Name"
             maxlength="32"
-            pattern="[A-Za-z]{1,32}"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Name must be two words separated by space"
             required
           />
         </label>
@@ -89,7 +90,10 @@
             type="text"
             name="phone"
             placeholder="Phone"
-            pattern="[7-9]{1}[0-9]{9}"
+            pattern="/^[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$/"
+            title="The number must contain 13 digits and start with +"
+            minlength="13"
+            maxlength="13"
             required
           />
         </label>

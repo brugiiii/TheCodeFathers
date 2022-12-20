@@ -126,13 +126,6 @@
   color: $copyright-color;
 }
 
-input:invalid:not(:placeholder-shown) {
-  border-color: rgb(223, 117, 117);
-}
-input:valid:not(:placeholder-shown) {
-  border-color: $bg-color;
-}
-
 .form-message {
   height: 64px;
   margin-bottom: 24px;
