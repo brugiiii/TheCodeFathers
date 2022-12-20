@@ -29,6 +29,8 @@
   align-items: center;
 }
 .logo {
+  display: flex;
+  align-items: center;
   @media screen and(min-width:1200px) {
     margin-right: 308px;
     padding: 8px 0;
