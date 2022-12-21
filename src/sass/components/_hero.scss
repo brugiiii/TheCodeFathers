@@ -144,8 +144,6 @@
 }
 
 .hero-thumb {
-
-  
   position: relative;
   display: none;
 
@@ -188,31 +186,31 @@
   line-height: calc(17 / 12);
 
   @media screen and(min-width:1200px) {
-    top: 0px;//-138
+    top: 0px; //-138
 
     width: 200px;
     // margin-bottom: 32px;//24
-    margin-top: 28px;//24
+    margin-top: 28px; //24
 
     font-size: 14px;
     line-height: calc(20 / 14);
   }
 }
 
-.hero__overlay {    
-  position:relative;
- transform: translateX(-101%);
- transition: transform 450ms $cubic-bezier;
+.hero__overlay {
+  position: relative;
+  transform: translateX(-101%);
+  transition: transform 450ms $cubic-bezier;
 }
 
 .hero-thumb__icon {
   fill: $primary-text-color;
+  cursor: pointer;
 }
 
 .hero__wrapped:hover .hero__overlay {
   transform: translateX(0%);
 }
-
 
 .hero-list {
   margin-left: auto;
