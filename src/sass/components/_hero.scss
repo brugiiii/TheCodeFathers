@@ -145,7 +145,7 @@
 
 .hero-thumb {
 
-  outline: 2px solid teal;
+  
   position: relative;
   display: none;
 
@@ -173,6 +173,8 @@
   align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: column-reverse;
+
+  overflow: hidden;
 }
 
 .hero-thumb__text {
@@ -197,12 +199,19 @@
   }
 }
 
-
+.hero__overlay {    
+  position:relative;
+ transform: translateX(-101%);
+ transition: transform 450ms $cubic-bezier;
+}
 
 .hero-thumb__icon {
   fill: $primary-text-color;
 }
 
+.hero__wrapped:hover .hero__overlay {
+  transform: translateX(0%);
+}
 
 
 .hero-list {
