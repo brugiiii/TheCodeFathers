@@ -56,7 +56,6 @@
 }
 
 .hero__title {
-  width: 247px;
   margin-bottom: 32px;
 
   font-family: 'Seymour One', sans-serif;
@@ -65,7 +64,10 @@
   line-height: calc(33 / 26);
   text-transform: uppercase;
 
+  animation: slide-to-right 800ms ease-in-out 700ms both;
+
   @media screen and(min-width:768px) {
+    width: 328px;
     margin-bottom: 24px;
   }
 
@@ -157,6 +159,7 @@
 
 .hero-thumb__image {
   transition: transform 450ms $cubic-bezier;
+
   &:hover {
     transform: scale(1.1) rotate(30deg);
   }
