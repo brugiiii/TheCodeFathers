@@ -5,71 +5,86 @@
 <section class="reviews">
   <div class="container">
     <h2 class="section__title visually-hidden">Customer Reviews</h2>
-    <div class="reviews__thumb">
-      <div class="rewiew__item">
-        <div class="review__image">
-          <img
-            srcset="
-              ./images/reviewers/reviews_1@1x.jpg 1x,
-              ./images/reviewers/reviews_1@2x.jpg 2x
-            "
-            src="./images/reviewers/reviews_1@1x.jpg"
-            alt="customer"
-            width="85"
-          />
+
+    <!-- Slider main container -->
+    <div class="swiper swipper-customerReviews">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="rewiew__item">
+            <div class="review__image">
+              <img
+                srcset="
+                  ./images/reviewers/reviews_1@1x.jpg 1x,
+                  ./images/reviewers/reviews_1@2x.jpg 2x
+                "
+                src="./images/reviewers/reviews_1@1x.jpg"
+                alt="customer"
+                width="85"
+              />
+            </div>
+            <div class="review__field">
+              <p class="review__text">
+                I love visiting your cafe. You prepare the most delicious ice
+                cream in Los Angeles! In addition, you have beautiful serving,
+                cozy atmosphere and polite staff.
+              </p>
+            </div>
+            <p class="review__name">Emily, Los Angeles</p>
+          </div>
         </div>
-        <div class="review__field">
-          <p class="review__text">
-            I love visiting your cafe. You prepare the most delicious ice cream
-            in Los Angeles! In addition, you have beautiful serving, cozy
-            atmosphere and polite staff.
-          </p>
+        <div class="swiper-slide">
+          <div class="rewiew__item">
+            <div class="review__image">
+              <img
+                srcset="
+                  ./images/reviewers/reviews_2@1x.jpg 1x,
+                  ./images/reviewers/reviews_2@2x.jpg 2x
+                "
+                src="./images/reviewers/reviews_1@1x.jpg"
+                alt="customer"
+                width="85"
+              />
+            </div>
+            <div class="review__field">
+              <p class="review__text">
+                Every day we come to you with friends after classes in college.
+                We love your ice cream and casual atmosphere!
+              </p>
+            </div>
+            <p class="review__name">Bryan, New-York</p>
+          </div>
         </div>
-        <p class="review__name">Emily, Los Angeles</p>
+        <div class="swiper-slide">
+          <div class="rewiew__item">
+            <div class="review__image">
+              <img
+                srcset="
+                  ./images/reviewers/reviews_3@1x.jpg 1x,
+                  ./images/reviewers/reviews_3@2x.jpg 2x
+                "
+                src="./images/reviewers/reviews_1@1x.jpg"
+                alt="customer"
+                width="85"
+              />
+            </div>
+            <div class="review__field">
+              <p class="review__text">
+                Ice cream is my passion! I love your chocolate hazelnut ice
+                cream! And I really like the excellent service - always served
+                politely and quickly!
+              </p>
+            </div>
+            <p class="review__name">Diana, Chicago</p>
+          </div>
+        </div>
+        ...
       </div>
 
-      <div class="rewiew__item">
-        <div class="review__image">
-          <img
-            srcset="
-              ./images/reviewers/reviews_2@1x.jpg 1x,
-              ./images/reviewers/reviews_2@2x.jpg 2x
-            "
-            src="./images/reviewers/reviews_1@1x.jpg"
-            alt="customer"
-            width="85"
-          />
-        </div>
-        <div class="review__field">
-          <p class="review__text">
-            Every day we come to you with friends after classes in college. We
-            love your ice cream and casual atmosphere!
-          </p>
-        </div>
-        <p class="review__name">Bryan, New-York</p>
-      </div>
-
-      <div class="rewiew__item">
-        <div class="review__image">
-          <img
-            srcset="
-              ./images/reviewers/reviews_3@1x.jpg 1x,
-              ./images/reviewers/reviews_3@2x.jpg 2x
-            "
-            src="./images/reviewers/reviews_1@1x.jpg"
-            alt="customer"
-            width="85"
-          />
-        </div>
-        <div class="review__field">
-          <p class="review__text">
-            Ice cream is my passion! I love your chocolate hazelnut ice cream!
-            And I really like the excellent service - always served politely and
-            quickly!
-          </p>
-        </div>
-        <p class="review__name">Diana, Chicago</p>
-      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </section>

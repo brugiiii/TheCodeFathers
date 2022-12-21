@@ -10,11 +10,22 @@
     padding-bottom: 140px;
   }
 }
+.swiper-gallary {
+  width: 280px;
+  height: 130px;
 
-.gallery__item {
-  display: flex;
-  justify-content: center;
+  @media screen and(min-width:768px) {
+    width: 704px;
+    height: 327px;
+  }
 
+  @media screen and(min-width:768px) {
+    width: 1013px;
+    height: 422px;
+  }
+}
+
+.swiper-slide-gallary {
   border-radius: 8px;
   overflow: hidden;
 
