@@ -1,55 +1,66 @@
 <section class="section gallery__section">
   <div class="container">
     <h2 class="section__title visually-hidden">Gallery</h2>
-    <ul class="gallery list">
-      <li class="gallery__item">
-        <img
-          class="gallery__image"
-          srcset="
-            ./images/gallery/gallery_1_420.jpg   420w,
-            ./images/gallery/gallery_1_704.jpg   704w,
-            ./images/gallery/gallery_1_840.jpg   840w,
-            ./images/gallery/gallery_1_1013.jpg 1013w,
-            ./images/gallery/gallery_1_1408.jpg 1408w,
-            ./images/gallery/gallery_1_2026.jpg 2026w
-          "
-          src="./images/gallery/gallery_1_420.jpg"
-          sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, 280px"
-          alt="ice-cream"
-        />
-      </li>
-      <li class="gallery__item">
-        <img
-          class="gallery__image"
-          srcset="
-            ./images/gallery/gallery_2_420.jpg   420w,
-            ./images/gallery/gallery_2_704.jpg   704w,
-            ./images/gallery/gallery_2_840.jpg   840w,
-            ./images/gallery/gallery_2_1013.jpg 1013w,
-            ./images/gallery/gallery_2_1408.jpg 1408w,
-            ./images/gallery/gallery_2_2026.jpg 2026w
-          "
-          src="./images/gallery/gallery_2_420.jpg"
-          sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 420px, 100vw"
-          alt="ice-cream"
-        />
-      </li>
-      <li class="gallery__item">
-        <img
-          class="gallery__image"
-          srcset="
-            ./images/gallery/gallery_3_420.jpg   420w,
-            ./images/gallery/gallery_3_704.jpg   704w,
-            ./images/gallery/gallery_3_840.jpg   840w,
-            ./images/gallery/gallery_3_1013.jpg 1013w,
-            ./images/gallery/gallery_3_1408.jpg 1408w,
-            ./images/gallery/gallery_3_2026.jpg 2026w
-          "
-          src="./images/gallery/gallery_3_420.jpg"
-          sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 420px, 100vw"
-          alt="ice-cream"
-        />
-      </li>
-    </ul>
+
+    <!-- Slider main container -->
+    <div class="swiper swiper-gallary">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide swiper-slide-gallary">
+          <img
+            class="gallery__image"
+            srcset="
+              ./images/gallery/gallery_1_420.jpg   420w,
+              ./images/gallery/gallery_1_704.jpg   704w,
+              ./images/gallery/gallery_1_840.jpg   840w,
+              ./images/gallery/gallery_1_1013.jpg 1013w,
+              ./images/gallery/gallery_1_1408.jpg 1408w,
+              ./images/gallery/gallery_1_2026.jpg 2026w
+            "
+            src="./images/gallery/gallery_1_420.jpg"
+            sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, 280px"
+            alt="ice-cream"
+          />
+        </div>
+        <div class="swiper-slide swiper-slide-gallary">
+          <img
+            class="gallery__image"
+            srcset="
+              ./images/gallery/gallery_2_420.jpg   420w,
+              ./images/gallery/gallery_2_704.jpg   704w,
+              ./images/gallery/gallery_2_840.jpg   840w,
+              ./images/gallery/gallery_2_1013.jpg 1013w,
+              ./images/gallery/gallery_2_1408.jpg 1408w,
+              ./images/gallery/gallery_2_2026.jpg 2026w
+            "
+            src="./images/gallery/gallery_2_420.jpg"
+            sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 420px, 100vw"
+            alt="ice-cream"
+          />
+        </div>
+        <div class="swiper-slide swiper-slide-gallary">
+          <img
+            class="gallery__image"
+            srcset="
+              ./images/gallery/gallery_3_420.jpg   420w,
+              ./images/gallery/gallery_3_704.jpg   704w,
+              ./images/gallery/gallery_3_840.jpg   840w,
+              ./images/gallery/gallery_3_1013.jpg 1013w,
+              ./images/gallery/gallery_3_1408.jpg 1408w,
+              ./images/gallery/gallery_3_2026.jpg 2026w
+            "
+            src="./images/gallery/gallery_3_420.jpg"
+            sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 420px, 100vw"
+            alt="ice-cream"
+          />
+        </div>
+        ...
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </div>
 </section>
