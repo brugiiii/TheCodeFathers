@@ -149,3 +149,21 @@ input:invalid:not(:placeholder-shown) {
 input:valid:not(:placeholder-shown) {
   border-color: $bg-color;
 }
+
+@keyframes slide-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(0);
+    letter-spacing: 0.19em;
+  }
+
+  100% {
+    transform: translateX(0);
+    letter-spacing: 0.04em;
+  }
+}
