@@ -34,18 +34,11 @@
 }
 
 .menu-thumb {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-
   width: 320px;
   margin: 0 auto;
 
   @media screen and(min-width:768px) {
     width: 768px;
-    position: static;
   }
 }
 
