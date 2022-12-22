@@ -45,6 +45,7 @@
 
   @media screen and(min-width:768px) {
     width: 768px;
+    position: static;
   }
 }
 
@@ -64,6 +65,10 @@
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+
+  @media screen and(min-width:768px) {
+    padding: 20px 32px;
+  }
 }
 
 .menu-container.is-open {
