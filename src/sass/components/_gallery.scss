@@ -10,6 +10,20 @@
     padding-bottom: 140px;
   }
 }
+.gallery-swiper {
+  width: 270px;
+  height: 113px;
+
+  @media screen and(min-width:768px) {
+    width: 680px;
+    height: 284px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 1013px;
+    height: 422px;
+  }
+}
 
 .image-thumb {
   width: 270px;
