@@ -97,6 +97,9 @@
     width: 279px;
     height: 278px;
     background-image: url(../images/about/cow_mob@1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 
     @media screen and(min-device-pixel-ratio: 2),
       screen and(min-resolution: 192dpi),
