@@ -10,30 +10,25 @@
     padding-bottom: 140px;
   }
 }
-.swiper-gallary {
-  width: 280px;
-  height: 130px;
 
-  @media screen and(min-width:768px) {
-    width: 704px;
-    height: 327px;
-  }
+.image-thumb {
+  width: 270px;
+  height: 113px;
 
-  @media screen and(min-width:768px) {
-    width: 1013px;
-    height: 422px;
-  }
-}
-
-.swiper-slide-gallary {
   border-radius: 8px;
   overflow: hidden;
 
   @media screen and(min-width:768px) {
+    width: 680px;
+    height: 284px;
+
     border-radius: 18px;
   }
 
   @media screen and(min-width:1200px) {
+    width: 1013px;
+    height: 422px;
+
     border-radius: 24px;
   }
 }
